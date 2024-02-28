@@ -5,7 +5,7 @@ const app=express()
 const cors = require('cors');
 app.use(express.json());
 app.use(cors({ 
-    origin: "http://localhost:3003",
+    origin: ["http://localhost:3003","https://portfolio-client-n2qa.onrender.com/"]
     credentials: true
 }));
 require('dotenv').config();
